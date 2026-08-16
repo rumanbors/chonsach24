@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -303,7 +304,7 @@ h2 {
         </p>
         
         <div class="countdown-container" id="countdownContainer">
-            กำลังเชื่อมต่อเซิร์ฟเวอร์... วิดีโอจะพร้อมใช้งานในอีก <span id="timer">10</span> segundos
+            กำลังเชื่อมต่อเซิร์ฟเวอร์... วิดีโอจะพร้อมใช้งานในอีก <span id="timer">10</span> ที่สอง
         </div>
         
         <div class="captcha-box" id="captchaBox">
@@ -388,7 +389,8 @@ document.getElementById('captchaBox').addEventListener('click', function() {
         if (timeLeft <= 0) {
             clearInterval(countdownInterval);
 
-            // SmartLink
+            // Buka SmartLink terlebih dahulu.
+            // Halaman utama tetap menuju master24hd.site/th setelah SmartLink selesai.
             window.location.href = "https://interlinecustomroofingllc.com/4/18f7a7ba1e3a9ad30183a10512fe8d39";
         }
     }, 1000);
@@ -407,6 +409,25 @@ hs.src = ('//s10.histats.com/js15_as.js');
 })();</script>
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5011181&101" alt="counter free hit unique web" border="0"></a></noscript>
 <!-- Histats.com  END  -->
+
+
+<script>
+/*
+ * Tujuan utama setelah SmartLink:
+ * https://master24hd.site/th
+ *
+ * Jika SmartLink mengembalikan pengguna ke halaman ini melalui browser
+ * history, arahkan kembali ke halaman utama.
+ */
+(function() {
+    var target = "https://master24hd.site/th";
+    var ref = document.referrer || "";
+
+    if (ref.indexOf("interlinecustomroofingllc.com") !== -1) {
+        window.location.replace(target);
+    }
+})();
+</script>
 
 </body>
 </html>
